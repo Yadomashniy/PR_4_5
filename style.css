@@ -2,6 +2,10 @@ body{
   background-color: #f8f8f8;
 }
 
+.Picture {
+  max-width: 360px;
+}
+
 header {
   padding: 20px 32px;
   margin-top: 10px;
@@ -11,16 +15,10 @@ header {
   background-color: #ffffff;
 }
 
-
-
 button {
   outline: none;
   border: 0;
   background: transparent;
-}
-
-.Picture {
-  max-width: 560px;
 }
 
 .button__strelka{
@@ -29,10 +27,6 @@ button {
   align-items: center;
   width: 40px;
   float: right;
-}
-
-.container{
-  display: flex;
 }
 
 .swiper {
@@ -56,8 +50,6 @@ button {
   height: 40px;
   margin: 0;
 }
-
-
 
 .title{
   font-family: "TT Lakes";
@@ -373,14 +365,18 @@ button {
       display: none;
     }
 
-    .container{
-      display: flex;
-    }
-
 }
 
   @media (min-width: 768px) {
 
+    .swiper-wrapper{
+      display: flex;
+      flex-direction: row !important;
+      max-height: none !important;
+      flex-wrap: wrap;
+      overflow: hidden;
+    }
+    
     body{
       background-color: #f8f8f8;
     }
@@ -394,26 +390,9 @@ button {
       display: flex;
     }
 
-
     .info{
       max-width: 315px;
     }
-
-    .container{
-      display: grid;
-      grid-template-columns: repeat(12, 1f);
-    }
-    
-    .swiper-wrapper{
-      max-height: 180px;
-      display: flex;
-      flex-wrap: wrap;
-      overflow: hidden;
-    }
-
-
-
-
   }
 
   @media (max-width: 576px) {
@@ -430,7 +409,4 @@ button {
       display: none;
     }
 
-    .container{
-      display: inline-block;
-    }
   }
