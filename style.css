@@ -4,6 +4,8 @@ body{
 
 .Picture {
   max-width: 360px;
+  max-height: 176px;
+  flex-shrink: 0;
 }
 
 header {
@@ -123,6 +125,10 @@ button {
   font-family: "TT Lakes";
   padding: 0 15px;
   margin: 15px 0;
+}
+
+.main_info{
+  display: flex;
 }
 
 .read-more{
